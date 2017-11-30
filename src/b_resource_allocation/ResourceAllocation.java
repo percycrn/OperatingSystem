@@ -33,19 +33,6 @@ class ResourceAllocation {
         processArr[i].setNeed(need);
     }
 
-    void printProcessInf() {
-        System.out.println("Name  Work       Need       Allocation  Work+Allocation  Finish");
-        for (int i = 0; i < numOfProcess; i++) {
-            System.out.print(processArr[i].getName() + "    ");
-            System.out.print(Arrays.toString(processArr[i].getWork()) + "  ");
-            System.out.print(Arrays.toString(processArr[i].getNeed()) + "  ");
-            System.out.print(Arrays.toString(processArr[i].getAllocation()) + "   ");
-            System.out.print(Arrays.toString(processArr[i].getWorkAllocation()) + "         ");
-            System.out.print(processArr[i].getStatus());
-            System.out.println();
-        }
-    }
-
     // 安全性算法
     boolean securityAlgorithm(String name, int[] request) {
         int i;

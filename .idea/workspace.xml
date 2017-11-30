@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4169e64d-3f99-48fb-b120-bcf62c12aacf" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/c_manage_storage/ManageStorage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/c_manage_storage/StorageStructuralBody.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/ProcessControlBlock$Node.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/ProcessControlBlock$Node.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/ProcessControlBlock.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/ProcessControlBlock.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/TestMain.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/a_process_schedule/TestMain.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/Main.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/ProcessContent.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/ProcessContent.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/ResourceAllocation.class" afterPath="$PROJECT_DIR$/out/production/JavaSrc/b_resource_allocation/ResourceAllocation.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/b_resource_allocation/ResourceAllocation.java" afterPath="$PROJECT_DIR$/src/b_resource_allocation/ResourceAllocation.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -397,12 +393,20 @@
       <workItem from="1511524245468" duration="7116000" />
       <workItem from="1511571432092" duration="8456000" />
       <workItem from="1511590518606" duration="603000" />
-      <workItem from="1512027191092" duration="4143000" />
+      <workItem from="1512027191092" duration="4178000" />
     </task>
+    <task id="LOCAL-00001" summary="unfinished c_exp">
+      <created>1512031401167</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1512031401167</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43089000" />
+    <option name="totallyTimeSpent" value="43124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="575" y="0" width="1105" height="1010" extended-state="0" />
@@ -443,6 +447,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="unfinished c_exp" />
+    <option name="LAST_COMMIT_MESSAGE" value="unfinished c_exp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

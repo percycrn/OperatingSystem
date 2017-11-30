@@ -6,6 +6,10 @@ class StorageStructuralBody {
     int end;
     int size;
 
+    StorageStructuralBody() {
+
+    }
+
     StorageStructuralBody(int index, int address, int end, int size) {
         this.index = index;
         this.address = address;

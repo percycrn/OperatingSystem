@@ -44,10 +44,18 @@ public class ManageStorage {
     private static void showStorage() {
         System.out.println("Index   address   end   size");
         for (StorageStructuralBody aStorage : storage) {
-            System.out.print(aStorage.index + "         ");
-            System.out.print(aStorage.address + "      ");
-            System.out.print(aStorage.end + "  ");
-            System.out.println(aStorage.size);
+            printWithBlank(aStorage.index);
+            printWithBlank(aStorage.address);
+            printWithBlank(aStorage.end);
+            printWithBlank(aStorage.size);
+            System.out.println();
+        }
+    }
+
+    private static void printWithBlank(int content) {
+        System.out.print(content);
+        for (int i = 1; i <= 8 - String.valueOf(content).length(); i++) {
+            System.out.print(" ");
         }
     }
 

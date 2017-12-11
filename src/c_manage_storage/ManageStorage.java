@@ -106,21 +106,18 @@ public class ManageStorage {
                 }
                 break;
             case "first":
-                boolean flagF = false;
                 for (int i = storage.size() - 1; i >= 0; i--) {
                     if (storage.get(i).size >= applicationSize) {
                         System.out.println("SUCCESS!!  ADDRESS = " + (storage.get(i).end - applicationSize + 1));
-                        flagF = true;
                         storage.get(i).size -= applicationSize;
                         storage.get(i).end -= applicationSize;
                         if (storage.get(i).size == 0) {
                             storage.remove(i);
                         }
+                        return;
                     }
                 }
-                if (!flagF) {
-                    System.out.println("too large application!");
-                }
+                System.out.println("too large application!");
                 break;
             default:
                 break;

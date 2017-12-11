@@ -4,22 +4,22 @@ import java.util.ArrayList;
 
 class ProcessControlBlock {
     private static class Node {
-        private String name; // 进程名字
+        private String name;  // 进程名字
         private int priority; // 进程优先数
-        private int CPUTime; // 已占用CPU的时间
+        private int CPUTime;  // 已占用CPU的时间
         private int needTime; // 需要CPU的时间
-        private char status; // 进程状态
-        private int round; // 时间片
-        private int count; // 已经运行的轮数
-        private Node next; // 下一个进程
+        private char status;  // 进程状态
+        private int round;    // 时间片
+        private int count;    // 已经运行的轮数
+        private Node next;    // 下一个进程
 
-        Node(String name, int needTime, int round) {
+        Node(String name, int needTime) {
             this.name = name;
             this.priority = 50 - needTime;
             this.CPUTime = 0;
             this.needTime = needTime;
             this.status = 'W';
-            this.round = round;
+            this.round = 2;
             this.count = 0;
             this.next = null;
         }
@@ -31,8 +31,8 @@ class ProcessControlBlock {
     private int size = 0;
 
     // 添加数据
-    void add(String name, int needTime, int round) {
-        Node node = new Node(name, needTime, round);
+    void add(String name, int needTime) {
+        Node node = new Node(name, needTime);
         Node l = last;
         last = node;
         if (first == null) {
@@ -77,7 +77,7 @@ class ProcessControlBlock {
         for (Object aFinishedQueue : finishedQueue) {
             System.out.print(aFinishedQueue + " ");
         }
-        System.out.println();
+        System.out.println("\n");
     }
 
     @SuppressWarnings("unchecked")
@@ -109,16 +109,7 @@ class ProcessControlBlock {
         printRound();
     }
 
-    void printName() {
-        Node node = first;
-        while (node != null) {
-            System.out.print(node.name + " ");
-            node = node.next;
-        }
-        System.out.println();
-    }
-
-    void sortPriority() {
+    private void sortPriority() {
         Node nodeI = first;
         Node nodeJ;
         while (nodeI != null) {
@@ -170,7 +161,7 @@ class ProcessControlBlock {
         for (Object aFinishedQueue : finishedQueue) {
             System.out.print(aFinishedQueue + " ");
         }
-        System.out.println();
+        System.out.println("\n");
     }
 
     @SuppressWarnings("unchecked")

@@ -2,13 +2,13 @@ package b_resource_allocation;
 
 class ProcessContent {
     private static int numOfName = 0;
-    private String name;
-    private int[] maximum;
-    private int[] allocation;
-    private int[] work;
-    private int[] need;
+    private String name;            // 进程名
+    private int[] maximum;          // 最大资源需求数
+    private int[] allocation;       // 已分配资源数
+    private int[] work;             // 当前剩余资源数
+    private int[] need;             // 当前进程需要资源数
+    private char status;            // 进程状态
     private int[] workAllocation;
-    private char status;
 
     ProcessContent(int numOfResource) {
         this.name = "p" + String.valueOf(numOfName++);
